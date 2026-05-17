@@ -1,0 +1,30 @@
+{
+  "mcp": {
+    "postgres-mcp": {
+      "type": "stdio",
+      "command": "node",
+      "args": ["/home/monte/projetos/mcp/dist/index.js"],
+      "env": {
+        "DB_TYPE": "postgres",
+        "PGUSER": "local_user",
+        "PGPASSWORD": "local_password",
+        "PGHOST": "localhost",
+        "PGDATABASE": "sigear_tst",
+        "PGPORT": "54320"
+      }
+    },
+    "mysql-mcp": {
+      "type": "stdio",
+      "command": "node",
+      "args": ["/home/monte/projetos/mcp/dist/index.js"],
+      "env": {
+        "DB_TYPE": "mysql",
+        "MYSQL_HOST": "localhost",
+        "MYSQL_USER": "root",
+        "MYSQL_PASSWORD": "password",
+        "MYSQL_DATABASE": "test",
+        "MYSQL_PORT": "3306"
+      }
+    }
+  }
+}
